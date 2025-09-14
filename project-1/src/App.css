@@ -1,0 +1,149 @@
+:root {
+  --red: #e63946;
+  --grey: #f1faee;
+  --text-dark: #333333;
+  --text-light: #666666;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  color: var(--text-dark);
+}
+
+button {
+  all: unset;
+  padding: 8px 20px;
+  background: var(--red);
+  height: 40px;
+  color: white;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 72px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 36px;
+  align-items: center;
+}
+
+nav .logo img {
+  height: 40px;
+  width: auto;
+}
+
+nav a {
+  color: var(--text-dark);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--red);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: calc(100vh - 72px);
+  gap: 60px;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-weight: 800;
+  line-height: 1.2;
+  font-size: 64px;
+  margin-bottom: 24px;
+}
+
+.hero p {
+  font-weight: 500;
+  color: var(--text-light);
+  font-size: 18px;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.hero-btn {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.secondary-btn {
+  background: transparent;
+  color: var(--text-dark);
+  border: 1px solid var(--text-dark);
+}
+
+.shopping {
+  margin-top: 48px;
+}
+
+.shopping p {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.brand-icons {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.brand-icons img {
+  height: 32px;
+  width: auto;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.brand-icons img:hover {
+  opacity: 1;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
